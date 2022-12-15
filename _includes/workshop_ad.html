@@ -14,6 +14,23 @@
 <div class="jumbotron">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
+      <div class="row">
+        <div class="col-xs-2 col-md-4 column banner">
+          <a href="http://cfm.ehu.eus" title="Materials Physics Center">
+            <img alt="Materials Physics Center banner" src="img/cfm-banner.png" />
+          </a>
+        </div>
+        <div class="col-xs-2 col-md-3 column banner">
+          <a href="http://www.csic.es" title="Consejo Superior de Investigaciones Científicas">
+            <img alt="Consejo Superior de Investigaciones Científicas" src="img/csic-banner.png" />
+          </a>
+        </div>
+        <div class="col-xs-2 col-md-3 column banner">
+          <a href="http://www.ehu.eus" title="University of the Basque Country">
+            <img alt="University of the Basque Country banner" src="img/ehu-banner.png" />
+          </a>
+        </div>
+        </div>
       {% unless site.title == "Workshop Title" or site.title == "" %}
       <h1>{{site.title}}</h1>
       {% endunless %}
@@ -25,8 +42,12 @@
           {% elsif online == "true_private" %}
           <p>Online</p>
           {% endif %}
-          <p>{{page.humandate}}</p>
+          <!--<p>{{page.humandate}}</p>
           <p>{% if page.humantime %}{{page.humantime}}{% endif %}</p>
+        -->
+        <p><a href=http://cfm.ehu.es>CFM</a> Computer Room SSB-008A</p>
+          <p>10, 19 and 27th January 2023<br>
+          9:00h - 18:00h</p>
         </div>
         <div class="col-md-6">
           <p>
