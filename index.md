@@ -59,6 +59,17 @@ It looks like you are setting up a website for a Software Carpentry curriculum b
 {% endunless %}
 {% endif %}
 
+<h4 id="general">Contents</h4>
+<p><small>
+ <ul>
+  <li><a href="#general">General Information</a></li>
+  <li><a href="#registration">Registration</a></li>
+  <li><a href="#schedule">Schedule</a></li>
+  <li><a href="#syllabus">Syllabus</a></li>
+  <li><a href="#setup">Software Setup Instructions</a></li>
+</ul>
+</small></p>
+
 {% comment %}
 EVENTBRITE
 
@@ -171,6 +182,7 @@ SPECIAL REQUIREMENTS
 
 Modify the block below if there are any special requirements.
 {% endcomment %}
+<!--
 <p id="requirements">
   <strong>Requirements:</strong>
   {% if online == "false" %}
@@ -182,6 +194,13 @@ Modify the block below if there are any special requirements.
   {% endif %}
   They should have a few specific software packages installed (listed <a href="#setup">below</a>).
 </p>
+-->
+<div class="alert alert-warning">
+  <strong>Requirements:</strong> Participants are <strong>strongly encouraged</strong> to bring their own laptop with a
+  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) with a few specific software packages installed (listed
+  <a href="#setup">below</a>). In case you can't bring one, the Computer Room computers will be setup and available for the workshop.
+ </div>
+
 
 {% comment %}
 ACCESSIBILITY
