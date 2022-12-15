@@ -302,6 +302,21 @@ Everyone who participates in Carpentries activities is required to conform to th
 </p>
 <hr/>
 
+<h2 id="registration">Registration</h2>
+
+<p>
+Registration is open as December the 15th
+
+<p>Assistance is limited to 20 people and seats are assigned in a first-come fist-served basis.</p>
+</p>
+
+<p class="text-center">
+  <a href="https://forms.gle/Wz8QfvSMFGUHju2K7">
+    <button type="button" class="btn btn-info">Register here</button>
+  </a>
+</p>
+<hr/>
+
 
 {% comment %}
 Collaborative Notes
