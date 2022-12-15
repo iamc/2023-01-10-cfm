@@ -200,23 +200,6 @@ Modify the block below if there are any special requirements.
   <a href="#setup">below</a>). In case you can't bring one, the Computer Room computers will be setup and available for the workshop.
  </div>
 
-
-{% comment %}
-ACCESSIBILITY
-
-Modify the block below if there are any barriers to accessibility or
-special instructions.
-{% endcomment %}
-<p id="accessibility">
-  <strong>Accessibility:</strong>
-{% if online == "false" %}
-  We are committed to making this workshop
-  accessible to everybody.  For workshops at a physical location, the workshop organizers have checked that:
-</p>
-<ul>
-  <li>The room is wheelchair / scooter accessible.</li>
-  <li>Accessible restrooms are available.</li>
-</ul>
 <p>
   Materials will be provided in advance of the workshop and
   large-print handouts are available if needed by notifying the
@@ -225,37 +208,11 @@ special instructions.
   get in touch (using contact details below) and we will
   attempt to provide them.
 </p>
-{% else %}
-  We are dedicated to providing a positive and accessible learning environment for all. Please
-  notify the instructors in advance of the workshop if you require any accommodations or if there is
-  anything we can do to make this workshop more accessible to you.
-</p>
-{% endif %}
 
-{% comment %}
-CONTACT EMAIL ADDRESS
 
-Display the contact email address set in the configuration file.
-{% endcomment %}
-<p id="contact">
-  <strong>Contact:</strong>
-  Please email
-  {% if page.email %}
-  {% for email in page.email %}
-  {% if forloop.last and page.email.size > 1 %}
-  or
-  {% else %}
-  {% unless forloop.first %}
-  ,
-  {% endunless %}
-  {% endif %}
-  <a href='mailto:{{email}}'>{{email}}</a>
-  {% endfor %}
-  {% else %}
-  to-be-announced
-  {% endif %}
-  for more information.
-</p>
+
+
+
 
 <p id="roles">
   <strong>Roles:</strong>
@@ -284,21 +241,38 @@ Edit the text to match who can attend the workshop. For instance:
 </p>
 {% endcomment %}
 
-<hr/>
-
 {% comment%}
 CODE OF CONDUCT
 {% endcomment %}
-<h2 id="code-of-conduct">Code of Conduct</h2>
 
-<p>
-Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. This document also outlines how to report an incident if needed.
+<p id="coc">
+  <strong>Code of Conduct:</strong>
+Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. This document also outlines how to <a href="https://goo.gl/forms/KoUfO53Za3apOuOK2">report an incident</a> if needed.
 </p>
 
-<p class="text-center">
-  <a href="https://goo.gl/forms/KoUfO53Za3apOuOK2">
-    <button type="button" class="btn btn-info">Report a Code of Conduct Incident</button>
-  </a>
+{% comment %}
+CONTACT EMAIL ADDRESS
+
+Display the contact email address set in the configuration file.
+{% endcomment %}
+<p id="contact">
+  <strong>Contact:</strong>
+  Please email
+  {% if page.email %}
+  {% for email in page.email %}
+  {% if forloop.last and page.email.size > 1 %}
+  or
+  {% else %}
+  {% unless forloop.first %}
+  ,
+  {% endunless %}
+  {% endif %}
+  <a href='mailto:{{email}}'>{{email}}</a>
+  {% endfor %}
+  {% else %}
+  to-be-announced
+  {% endif %}
+  for more information.
 </p>
 <hr/>
 
