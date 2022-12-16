@@ -172,6 +172,7 @@ This block displays the date and links to Google Calendar.
 <p id="when">
   <strong>When:</strong>
   {{page.humandate}}.
+  <a href="files/CFM-Software-Carpentry-Workshop.ics">Add to calendar.</a>
   <!--{% include workshop_calendar.html %}-->
 </p>
 {% endif %}
