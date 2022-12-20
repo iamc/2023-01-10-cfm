@@ -65,6 +65,7 @@ It looks like you are setting up a website for a Software Carpentry curriculum b
   <li><a href="#general">General Information</a></li>
   <li><a href="#registration">Registration</a></li>
   <li><a href="#schedule">Schedule</a></li>
+  <li><a href="#syllabus">Syllabus</a></li>
   <li><a href="#setup">Software Setup Instructions</a></li>
 </ul>
 </small></p>
@@ -387,6 +388,15 @@ The lesson taught in this workshop is being piloted and a precise schedule is ye
 {% endif %}
 
 <hr/>
+
+{% comment %}
+SYLLABUS
+
+Section removed in new template but I add it anyway
+{% endcomment %}
+
+<h2 id="syllabus">Syllabus</h2>
+{% include swc/syllabus.html %}
 
 
 {% comment %}
