@@ -281,15 +281,13 @@ Display the contact email address set in the configuration file.
 <h2 id="registration">Registration</h2>
 
 <p>
-Registration is open as December the 15th
-
-<p>Assistance is limited to 20 people and seats are assigned in a first-come fist-served basis.</p>
+Registration is <b>closed</b> as December the 29th!
 </p>
+<p>
+All available seats for the workshop have been filled, with a few people still in the waiting list.
+</p>
+<p>
 
-<p class="text-center">
-  <a href="https://forms.gle/Wz8QfvSMFGUHju2K7">
-    <button type="button" class="btn btn-info">Register here</button>
-  </a>
 </p>
 <hr/>
 
